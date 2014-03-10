@@ -18,6 +18,7 @@ Lumu is a light meter for iOS devices that helps you take great photos. For more
 ## Usage
 
 To start receiving data from Lumu in your class, you have to complete the following steps:
+
 1. Conform to the LumuManagerDelegate protocol
 2. Get the shared instance of LumuManager: LumuManager *lumu = [LumuManager sharedManager];
 3. Set your class as the delegate for Lumu
@@ -25,12 +26,12 @@ To start receiving data from Lumu in your class, you have to complete the follow
 
 LumuManager provides the next optional protocol methods: 
 ```objectivec
-    -(void)lumuManagerDidRecognizeLumu;
-    -(void)lumuManagerDidReceiveData: (NSNumber *)value;
-    -(void)lumuManagerDidReceiveFirstData: (NSNumber *)value;
-    -(void)lumuManagerDidStartLumu;
-    -(void)lumuManagerDidStopLumu;
-    -(void)lumuManagerDidRecognizeVolumeButtonPressed;
+ -(void)lumuManagerDidRecognizeLumu;
+ -(void)lumuManagerDidReceiveData: (NSNumber *)value;
+ -(void)lumuManagerDidReceiveFirstData: (NSNumber *)value;
+ -(void)lumuManagerDidStartLumu;
+ -(void)lumuManagerDidStopLumu;
+ -(void)lumuManagerDidRecognizeVolumeButtonPressed;
 ```
 
 By default, the LumuManager will try to start Lumu as soon as you set the delegate property. It will also automatically stop and start Lumu when you detach/attach it. 
