@@ -15,12 +15,35 @@
 
 @protocol LumuManagerDelegate <NSObject>
 @optional
+
 -(void)lumuManagerDidNotGetRecordPermission;
+
+/*!
+ * This method is called when the attached device is recognized as Lumu.
+ */
 -(void)lumuManagerDidRecognizeLumu;
+
+/*!
+ * This method is called when the attached device is NOT recognized as Lumu.
+ */
 -(void)lumuManagerDidNotRecognizeLumu;
+
+/*!
+ * This method is called every time the manager receives a new value from Lumu.
+ * @param value the received light value
+ */
 -(void)lumuManagerDidReceiveData: (double)value;
+
+/*!
+ * This method is called every time the manager starts communicating with Lumu.
+ */
 -(void)lumuManagerDidStartLumu;
+
+/*!
+ * This method is called every time the manager stops communicating with Lumu.
+ */
 -(void)lumuManagerDidStopLumu;
+
 -(void)lumuManagerDidRecognizeVolumeButtonPressed;
 @end
 
