@@ -10,17 +10,17 @@ Lumu is a light meter for iOS devices that helps you take great photos. For more
 
 ## Installation
 
-1. Add the Lumu.framework to your project
-2. Link the AVFoundation.framework, MediaPlayer.framework and AudioToolbox.framework to your project
-3. Import LumuManager.h to your class
+1. Add the ``Lumu.framework`` to your project
+2. Link the ``AVFoundation.framework``, ``MediaPlayer.framework`` and ``AudioToolbox.framework`` to your project
+3. Import ``LumuManager.h`` to your class
 4. Start measuring!
 
 ## Usage
 
 To start receiving data from Lumu in your class, you have to complete the following steps:
 
-1. Conform to the LumuManagerDelegate protocol
-2. Get the shared instance of LumuManager: LumuManager *lumu = [LumuManager sharedManager];
+1. Conform to the ``LumuManagerDelegate`` protocol
+2. Get the shared instance of LumuManager: ``LumuManager *lumu = [LumuManager sharedManager];``
 3. Set your class as the delegate for Lumu
 4. Implement the optional protocol methods, to receive data from Lumu
 
