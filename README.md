@@ -26,12 +26,31 @@ To start receiving data from Lumu in your class, you have to complete the follow
 
 LumuManager provides the next optional protocol methods: 
 ```objectivec
- -(void)lumuManagerDidRecognizeLumu;
- -(void)lumuManagerDidReceiveData: (NSNumber *)value;
- -(void)lumuManagerDidReceiveFirstData: (NSNumber *)value;
- -(void)lumuManagerDidStartLumu;
- -(void)lumuManagerDidStopLumu;
- -(void)lumuManagerDidRecognizeVolumeButtonPressed;
+/*!
+ * This method is called when the attached device is recognized as Lumu.
+ */
+-(void)lumuManagerDidRecognizeLumu;
+
+/*!
+ * This method is called when the attached device is NOT recognized as Lumu.
+ */
+-(void)lumuManagerDidNotRecognizeLumu;
+
+/*!
+ * This method is called every time the manager receives a new value from Lumu.
+ * @param value the received light value
+ */
+-(void)lumuManagerDidReceiveData: (double)value;
+
+/*!
+ * This method is called every time the manager starts communicating with Lumu.
+ */
+-(void)lumuManagerDidStartLumu;
+
+/*!
+ * This method is called every time the manager stops communicating with Lumu.
+ */
+-(void)lumuManagerDidStopLumu;
 ```
 
 By default, the LumuManager will try to start Lumu as soon as you set the delegate property. It will also automatically stop and start Lumu when you detach/attach it. 
