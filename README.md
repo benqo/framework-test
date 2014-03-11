@@ -11,7 +11,7 @@ Lumu is a light meter for iOS devices that helps you take great photos. For more
 ## Installation
 
 1. Add the ``Lumu.framework`` to your project
-2. Link the ``AVFoundation.framework``, ``MediaPlayer.framework`` and ``AudioToolbox.framework`` to your project
+2. Link the ``AVFoundation.framework``, ``MediaPlayer.framework``, ``AudioToolbox.framework`` and ``CoreTelephony.framework`` to your project
 3. Import ``LumuManager.h`` to your class
 4. Start measuring!
 
