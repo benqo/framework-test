@@ -489,6 +489,7 @@
 				C44394F518CE21A7003B4AB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C44394F618CE21A7003B4AB7 /* Build configuration list for PBXNativeTarget "LumuExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +498,7 @@
 				C44394F818CE21A7003B4AB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

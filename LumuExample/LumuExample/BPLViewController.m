@@ -9,6 +9,7 @@
 #import "BPLViewController.h"
 
 @interface BPLViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
 @end
 
@@ -18,6 +19,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+	[[UIApplication sharedApplication] setStatusBarHidden:YES];
 	
 	[LumuManager sharedManager].delegate = self;
 }
@@ -28,9 +30,18 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)lumuManagerDidReceiveData:(double)value
+- (void)lumuManagerDidReceiveData:(CGFloat)value
 {
-	NSLog(@"%f", value);
+	self.label.text = [NSString stringWithFormat:@"%.1f", value];
+}
+
+- (void)lumuManagerDidStopLumu
+{
+	self.label.text = @"";
+}
+
+- (NSUInteger)supportedInterfaceOrientations{
+    return UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown;
 }
 
 @end

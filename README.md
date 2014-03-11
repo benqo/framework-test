@@ -55,6 +55,8 @@ LumuManager provides the next optional protocol methods:
 By default, the LumuManager will try to start Lumu as soon as you set the delegate property. It will also automatically stop and start Lumu when you detach/attach it. 
 If you would like to manually start and stop Lumu you have to set the ``shouldRecognizeLumu`` property to ``NO``, before you set the delegate property. Then you have to use ``startLumuManager`` and ``stopLumuManager`` methods.
 
+You can convert the light measurement from Lux to Foot-candles with the ``convertToFootCandles: (CGFloat)lux`` method.
+
 ## Example
 
 The example project uses the Lumu framework to receive data from Lumu and to simply display this value on a Label.

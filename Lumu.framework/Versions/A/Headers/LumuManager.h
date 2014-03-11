@@ -8,6 +8,7 @@
 
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 /*
  * LumuManagerDelegate
@@ -32,7 +33,7 @@
  * This method is called every time the manager receives a new value from Lumu.
  * @param value the received light value
  */
--(void)lumuManagerDidReceiveData: (double)value;
+-(void)lumuManagerDidReceiveData: (CGFloat)value;
 
 /*!
  * This method is called every time the manager starts communicating with Lumu.
@@ -84,6 +85,11 @@
 
 - (void)stopLumuManager;
 
+/*
+ * Convert Lux value to Foot Candles.
+ */
+
+- (CGFloat)convertToFootCandles: (CGFloat)lux;
 
 
 @end
