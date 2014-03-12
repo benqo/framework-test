@@ -2,9 +2,9 @@
   <a href="http://lu.mu/"><img src="http://lu.mu/images/logo.png" alt="Lumu" title="Lumu" width="150px" /></a>
 </p>
 
-## Lumu iOS Framework
+## Lumu iOS SDK
 
-The Lumu framework helps you connect [Lumu](http://lu.mu/) to your iOS application. It provides the essential methods for managing the connection with Lumu and receiving data.
+The Lumu SDK helps you connect [Lumu](http://lu.mu/) to your iOS application. It provides the essential methods for managing the connection with Lumu and receiving data.
 
 Lumu is a light meter for iOS devices that helps you take great photos. For more information about Lumu please visit our [website](http://lu.mu/).
 
@@ -59,15 +59,15 @@ You can convert the light measurement from Lux to Foot-candles with the ``conver
 
 ## Example
 
-The example project uses the Lumu framework to receive data from Lumu and to simply display this value on a Label.
+The example project uses the Lumu SDK to receive data from Lumu and to simply display this value on a Label.
 It stops the LumuManager when the App stops being active, and starts it when the App is in the foreground again.
 
 
 ## FAQ
 
-### Can I use Lumu framework without a Lumu?
+### Can I use Lumu SDK without a Lumu?
 
-No. In order to get light measurements and a response from the framework you need Lumu. You can order one from [our website](http://lu.mu/).
+No. In order to get light measurements and a response from the SDK you need Lumu. You can order one from [our website](http://lu.mu/).
 
 ## Feedback
 
